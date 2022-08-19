@@ -154,4 +154,10 @@ Here, the PCB acts as the main component. Resistors, PIC16f877A IC, Capacitors, 
         }
       
     
+## DISCUSSION
 
+Working in this lab presented us with some difficulties. The root causes of these issues are human error and equipment failure. In our first PCB, we soldered adders instead of an IC base. Therefore we could not connect the IC properly. In this circuit, IR sensors are used instead of water sensors.  In addition, there were a few power delivery problems. We used a breadboard power module to convert a 9V DC to 5V DC. We did not use motors because we could not manage the power input to the motor relays because of limited resources.
+
+## CONCLUSION
+
+We ran into a number of difficulties while writing the code and planning the circuit. Our ability to work as a team was strengthened because we completed this lab in groups. It was a great experience to spot errors and decide how to fix them as a team, especially while we were carrying out the hardware demonstration. We were able to correctly understand how the pic16f877a and other components behave after engaging in this lab activity. In conclusion, the task was successfully completed, and the outcome was as anticipated.
