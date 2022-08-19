@@ -48,7 +48,8 @@ The PIC16f877A microcontroller was mainly used to develop a system for controlli
 ## INTRODUCTION
 
 <p>One of the most widely used microcontrollers is the PIC16F877A. It has a total of 40 pins, 33 of which are used for input and output. This microcontroller is frequently used in digital electronic circuits and microcontroller projects. This microcontroller's ability to write-erase as many times as possible is one of its key advantages because it has a Flash program memory. Here, the logics are controlled by the microcontroller via input/output to and from external stimuli, respectively.
-<br>
+
+    
 An electrical device known as a direct current motor transforms electrical energy into mechanical energy. Direct current is used to generate a magnetic field, which is then converted. Comparing DC motors to other types of motors, the main benefit of using them is the ability to precisely control speed. A sensor is a device that measures a physical input and converts its data so that both machines and humans can read it. IR sensors were used in this experiment.</p>
 
 ## Methodology
