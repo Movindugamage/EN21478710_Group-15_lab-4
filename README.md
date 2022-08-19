@@ -109,7 +109,7 @@ Here, the PCB acts as the main component. Resistors, PIC16f877A IC, Capacitors, 
     #define _XTAL_FREQ 20000000
 
     void __interrupt () isr(void) 
-{
+        {
     if (RB2 == 1 && RB1 == 1)
     {   
         RC0 = 0;
@@ -119,6 +119,39 @@ Here, the PCB acts as the main component. Resistors, PIC16f877A IC, Capacitors, 
     }
     INTF = 0;
     
-}
+        }
+          void main(void)
+        {
+    GIE = 1;   
+    INTE = 1; 
+    INTF = 0;
+    //PEIE = 1 ;   
+    INTEDG = 1;
+    
+    TRISB0 = 1;//SWITCH 03
+    TRISB1 = 1;//SWITCH 02
+    TRISB2 = 1;//SWITCH 01
+    TRISC0 = 0;
+    TRISC1 = 0;
+    //PORTB = 0X00;
+    PORTC = 0X00;
+      
+    while(1)
+    {        
+        if(RB2 == 1 && RB1 == 0 && RB0 == 0){
+            RC0 = 1;
+            RC1 = 0; 
+        }
+        if(RB2 == 1 && RB1 == 1 && RB0 == 0){
+            RC0 = 1;
+            RC1 = 0;
+        }else if(RB2 == 0){
+            RC0 = 0;
+            RC1 = 0;
+        }
+    }
+    return;
+        }
+      
     
 
